@@ -1,0 +1,7 @@
+.banner {
+    background-image: url(images/Screenshot\ 2021-11-30\ at\ 17.11.28.png);
+    height: 50vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

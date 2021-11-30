@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>HorseRAce</title>
+        <title>HorseRace</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,11 +23,16 @@
             <div class="row">
               <div class="col">
                 
-                <button type="button" onclick="newRace()" class="btn btn-outline-danger btn-block" data-bs-toggle="collapse" data-bs-target="#ingred">Start New Race</button>
+                <button id="button1" type="button" class="btn btn-outline-danger btn-block" data-bs-toggle="collapse" data-bs-target="#ingred">Start New Race</button>
                 <div id="ingred" class="collapse">
-                    <h3>Horses</h3>
+                    <h3 id="horsesList">Horses:</h3>
                     
-                    <p id="names"></p>
+                    <p id="horse1"></p>
+                    <p id="horse2"></p>
+                    <p id="horse3"></p>
+                    <p id="horse4"></p>
+                    <!-- <p id="horse5"></p>
+                    <p id="horse6"></p> -->
                 </div>
 
 
@@ -43,9 +48,38 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="index.js"></script> 
+       
+        <script src="index.js" charset="utf-8"></script> 
+
         <!-- <script>
-            document.getElementById("test").innerHTML = "Test"
+
+            function nameGenerator() {
+              let Moniker = require('moniker');
+              // console.log(Moniker.choose());
+              // let generateName = require('sillyname');
+              // let sillyName = generateName();
+              alert(Moniker.choose());
+              // return sillyName;
+            }
+
+            function newRace() {
+                horses= [];
+                // horses = ["one", "two", "three", "four"];
+                nameGenerator();
+                for (i=0; i<3; i++) {
+                  horses.push(nameGenerator());
+                  alert(horses[i]);
+                }
+
+                horses.forEach(element => {
+                  alert(`horse${horses.indexOf(element)}`)
+                  document.getElementById(`horse${horses.indexOf(element)+1}`).innerHTML = element;
+                 });
+            }    
+
+
+            document.getElementById("button1").onclick = newRace;
+            
         </script> -->
     </body>
 </html>

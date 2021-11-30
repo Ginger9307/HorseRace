@@ -1,0 +1,25 @@
+{
+  "name": "horserace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^27.4.2",
+    "moniker": "^0.1.2",
+    "sillyname": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ginger9307/HorseRace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ginger9307/HorseRace/issues"
+  },
+  "homepage": "https://github.com/Ginger9307/HorseRace#readme"
+}
